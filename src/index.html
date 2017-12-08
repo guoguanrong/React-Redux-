@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>React Webpack Template Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+    /*全局样式*/
+    *{padding:0;margin:0;}
+    div,dl,dt,dd,form,h1,h2,h3,h4,h5,h6,img,ol,ul,li,table,th,td,p,span,a{border:0;}
+    img,input{vertical-align:middle;outline: none;}
+    body{font-family:'微软雅黑';font-size:12px;text-align:center;background:#FFF;color:#000;}
+    html{overflow-y:scroll;}
+    ul,ol{list-style-type:none;}
+    th,td,input{font-size:12px;}
+    h3{font-size:14px;}
+    button{border:none;cursor:pointer;font-size:12px;background-color:transparent;}
+    select{border-width:1px;_zoom:1;border-style:solid;padding-top:2px;font-size:12px;}
+    .clear{clear:both;font-size:1px;height:0;visibility:hidden;line-height:0;}
+    .clearfix:after{content:"";display:block;clear:both;}
+    .clearfix{zoom:1;}
+    a:link,a:visited{text-decoration:none;color:#333;}
+    a:hover,a:active{text-decoration:underline;}
+  </style>
+</head>
+<body>
+  <!-- <div id="app">加载中...</div> -->
+  <div id="app"></div>
+  <script>__REACT_DEVTOOLS_GLOBAL_HOOK__ = parent.__REACT_DEVTOOLS_GLOBAL_HOOK__</script>
+  <script type="text/javascript" src="/assets/app.js"></script>
+  <script>
+    (function(doc,win){
+      var docEl=doc.documentElement,
+      //此设置考虑到了手机横屏的问题
+      // The in operator returns true if the specified property is in the specified object.
+      //syntax: prop in objectName
+      resizeEvt='orientationchange' in window?'orientationchange':'resize',
+      recalc=function(){
+        var clientWidth=docEl.clientWidth;
+        if(!clientWidth)return;
+        //此设置是根据psd为640宽度下设置1rem=10px来设置的
+        docEl.style.fontSize=10*(clientWidth/640)+'px';
+      };
+      if(!doc.addEventListener) return;
+      win.addEventListener(resizeEvt,recalc,false);
+      doc.addEventListener('DOMContentLoaded',recalc,false);
+    })(document,window);
+  </script>
+</body>
+</html>

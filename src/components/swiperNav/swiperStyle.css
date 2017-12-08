@@ -1,0 +1,37 @@
+.swiperbox .pop{
+    width: 100%;
+}
+.swiperbox .pop ul{
+    width: 60px;
+    height: 5px;
+    margin: 0 auto;
+}
+.swiperbox .pop ul li{
+    float: left;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #ccc;
+    margin:0 auto;
+    margin: 0 5px;
+}
+.navred{
+    background: #f00 !important;
+}
+.swiperbox .carousel div{
+    width: 100%;
+}
+.swiperbox .carousel div ul li{
+    float: left;
+    width: 25%;
+    padding:5% 0;
+}
+.swiperbox .carousel div ul li span{
+    font-size: 15px;
+    color: #333;
+}
+.swiperbox .carousel div ul li i{
+    font-size: 28px;
+    color: #f43548;
+    display: block;
+}

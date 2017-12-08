@@ -1,0 +1,16 @@
+.citylistbox{
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+}
+.citylistbox ul{
+    width: 100%;
+}
+.citylistbox ul li{
+    float: left;
+    width: 20%;
+    padding:10px 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin:5px 7px;
+}

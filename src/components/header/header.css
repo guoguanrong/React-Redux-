@@ -1,0 +1,22 @@
+.common-header{
+    width: 100%;
+    height: 40px;
+    background: #ec1b38;
+    position: relative
+}
+.common-header span{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+.common-header span i {
+    color: #fff;
+    font-size: 30px;
+}
+.common-header h1{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: normal;
+}
